@@ -6,8 +6,4 @@
 import collections
 
 def solution(nums):
-    mon = collections.Counter(nums)
-    if len(mon) > len(nums)/2:
-        return len(nums)/2
-    else:
-        return len(mon)
+    return min(len(nums)/2, len(set(nums)))
