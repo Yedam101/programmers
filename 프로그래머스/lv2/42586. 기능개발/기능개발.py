@@ -6,7 +6,6 @@ def solution(progresses, speeds):
     # count 새 배열에 저장 count 0으로 한뒤 다시 세기... 시간...?
     
     remains = [math.ceil((100-progresses[i])/speeds[i]) for i in range(len(speeds))]
-    print(remains)
     
     stt, end, count = 0, 1, 1
     result = []
